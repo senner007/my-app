@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Form,
-  FormGroup,
-  FormControl,
-  Button
-} from 'react-bootstrap';
-
+import { Form, FormGroup, FormControl, Button} from 'react-bootstrap';
 
 const SearchForm = () => (
   <Form inline>

@@ -7,7 +7,7 @@ import {
 
 const Results = () => (
   <Grid>
-    <h2>REsults List</h2>
+    <h2>Results List</h2>
     <ListGroup>
       <ListGroupItem href="#" active>Link 1</ListGroupItem>
       <ListGroupItem href="#">Link 2</ListGroupItem>
