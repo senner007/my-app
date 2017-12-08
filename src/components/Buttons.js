@@ -5,11 +5,20 @@ import {
   ButtonToolbar
 } from 'react-bootstrap';
 
-const Buttons = () => (
+
+function Buttons () {
+  var text = {
+    large: 'Hello Large Button',
+    size: 'large'
+
+  }
+
+  return (
   <Grid>
     <ButtonToolbar>
-      <Button bsStyle="primary" bsSize="large">Large button</Button>
-      <Button bsSize="large">Large button</Button>
+      <Button bsStyle="primary" bsSize={text.size}>{text.large}</Button>
+      <Button bsSize="large">{text.large}</Button>
+      <Button bsSize="large">{text.large}</Button>
     </ButtonToolbar>
     <ButtonToolbar>
       <Button bsStyle="primary">Default button</Button>
@@ -25,5 +34,6 @@ const Buttons = () => (
     </ButtonToolbar>
   </Grid>
 );
+}
 
 export default Buttons;

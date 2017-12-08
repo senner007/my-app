@@ -1,36 +1,37 @@
 import React, { Component } from 'react';
 import {Grid, Jumbotron} from 'react-bootstrap';
 import SearchForm from './components/SearchForm';
-import Results from './components/Results';
-import Buttons from './components/Buttons';
+import NavbarLinks from './components/NavbarLinks';
+import Routes from './components/routing/Routes';
 import PropTypes from 'prop-types';
-
 
 class App extends Component {
   render() {
+    var text = {
+        title: 'This is a title!',
+        subtitle : 'This is a subtitle'
+    };
     return (
       <div>
-
         <Jumbotron>
           <Grid>
-
-            <h1>{this.props.name}</h1>
-            <p>This is a simple search app</p>
+            <h1>{this.props.name} - {text.title}</h1>
+            <p>This is a simple search app - {text.subtitle}</p>
+            <NavbarLinks/>
             <SearchForm/>
           </Grid>
         </Jumbotron>
-          <Buttons/>
-        <Results/>
+        <Routes/>
       </div>
     );
   }
 }
-  App.propTypes = {
-    name: PropTypes.string
-  };
-  App.defaultProps = {
-    name: 'stranger'
-  }
 
+App.propTypes = {
+  name: PropTypes.string
+};
+App.defaultProps = {
+  name: 'stranger'
+}
 
 export default App;

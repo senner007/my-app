@@ -13,6 +13,9 @@ const Results = () => (
       <ListGroupItem href="#">Link 2</ListGroupItem>
       <ListGroupItem href="#" disabled>Link 3</ListGroupItem>
     </ListGroup>
+    <p>
+     Hello
+    </p>
   </Grid>
 );
 
