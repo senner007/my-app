@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Grid, Jumbotron} from 'react-bootstrap';
 import SearchForm from './components/SearchForm';
 import NavbarLinks from './components/NavbarLinks';
-import Routes from './components/routing/Routes';
+import Routes from './routing/Routes';
 import PropTypes from 'prop-types';
 
 class App extends Component {

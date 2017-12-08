@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Buttons from '../Buttons';
-import Results from '../Results'
+import Buttons from '../components/Buttons';
+import Results from '../components/Results'
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
