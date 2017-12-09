@@ -8,15 +8,15 @@ import PropTypes from 'prop-types';
 class App extends Component {
   render() {
     var text = {
-        title: 'This is a title!',
-        subtitle : 'This is a subtitle'
+        title: 'with Routing and Bootstrap',
+        subtitle : 'Additional modules used: React-bootstrap, react-router-bootstrap, react-router-dom'
     };
     return (
       <div>
         <Jumbotron>
           <Grid>
-            <h1>{this.props.name} - {text.title}</h1>
-            <p>This is a simple search app - {text.subtitle}</p>
+            <h1>{this.props.name}</h1>
+            <p>- {text.title}</p>
             <NavbarLinks/>
             <SearchForm/>
           </Grid>
@@ -31,7 +31,7 @@ App.propTypes = {
   name: PropTypes.string
 };
 App.defaultProps = {
-  name: 'stranger'
+  name: 'Basic React App'
 }
 
 export default App;

@@ -12,8 +12,8 @@ const Routes = function () {
   return (
     <main>
       <Switch>
-        <Route path='/Results' component={Results}/>
-        <Route path='/Buttons' component={Buttons}/>
+        <Route path='/results' component={Results}/>
+        <Route path='/buttons' component={Buttons}/>
       </Switch>
     </main>
   )
